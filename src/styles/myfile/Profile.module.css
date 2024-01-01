@@ -1,6 +1,5 @@
 .header {
   font-size: 30px;
-  margin: 30px 0 0px;
 }
 
 .subHeader {
@@ -34,6 +33,15 @@
   border-radius: 3px;
 }
 
+.profileBox li {
+  cursor: default;
+}
+
+.profileBox li:hover {
+  transform: scaleX(1.05);
+  transition: all 0.3s;
+}
+
 .title {
   font-size: 18px;
   font-weight: bold;
@@ -56,10 +64,16 @@
 }
 
 .list li {
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color: rgba(161, 161, 161, 0.2);
   padding: 10px 15px;
   margin: 10px 0;
   border-radius: 5px;
+  cursor: default;
+}
+
+.list li:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .content2 {
@@ -140,12 +154,12 @@
 
 .certDetailBox {
   width: 559px;
-  margin: 10px 0 30px 0;
+  margin: 10px 0;
   display: flex;
 }
 
 .certDetail {
-  background-color: rgba(131, 185, 255, 0.32);
+  background-color: rgba(255, 204, 156, 0.32);
   padding: 10px;
   display: block;
   border-radius: 5px;
