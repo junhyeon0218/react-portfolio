@@ -5,7 +5,7 @@ const Stacks = () => {
   return (
     <Fragment>
       <div className={classes.container}>
-        <div className={classes.title}>스택/기술</div>
+        <div className={classes.title}>🔨기술/스택</div>
         <div className={classes.content}>
           <div className={classes.subTitle}>익숙해요!</div>
           <ul className={classes.stackBox}>
