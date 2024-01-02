@@ -6,6 +6,7 @@ import Stacks from "../myfile/Stacks";
 import Actives from "../myfile/Actives";
 import Papers from "../myfile/Papers";
 import Projects from "../myfile/Projects";
+import "xp.css/dist/XP.css";
 
 const Information = () => {
   const [activeSection, setActiveSection] = useState("프로필");
@@ -19,10 +20,18 @@ const Information = () => {
       <div className={classes.container}>
         <div className={classes.headerBg}></div>
         <div className={classes.header}>
-          <div className={classes.myfileIconBox}>
-            <img src={myfile} className={classes.myfileIcon} />
+          <div className={classes.headerTitle}>
+            <div className={classes.myfileIconBox}>
+              <img src={myfile} className={classes.myfileIcon} />
+            </div>
+            <div>내 정보</div>
           </div>
-          <div>내 정보</div>
+
+          <div className='title-bar-controls'>
+            <button aria-label='Minimize'></button>
+            <button aria-label='Restore'></button>
+            <button aria-label='Close' className={classes.closeBtn}></button>
+          </div>
         </div>
         <div className={classes.content}>
           <ul className={classes.nav}>
