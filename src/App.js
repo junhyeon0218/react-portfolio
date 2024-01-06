@@ -1,8 +1,8 @@
 import "./App.css";
 import { Fragment } from "react";
-import Menu from "./components/menu/Menu";
-import Grid from "./components/background/Grid";
-import Information from "./components/background/Information";
+import Grid from "./background/Grid";
+import Information from "./background/apps/Information";
+import Menu from "./background/menu/Menu";
 
 function App() {
   return (
