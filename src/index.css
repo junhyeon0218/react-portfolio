@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Microsoft Sans Serif", sans-serif;
+  font-family: Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("../src/assets/wallpaper.jpg");
@@ -12,5 +12,5 @@ body {
 }
 
 code {
-  font-family: "Microsoft Sans Serif", sans-serif;
+  font-family: Tahoma, sans-serif;
 }
