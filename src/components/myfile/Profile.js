@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import myPic from "../../assets/myPic.jpg";
 
 import classes from "../../styles/myfile/Profile.module.css";
 
@@ -11,7 +12,9 @@ const Profile = () => {
         <span className={classes.strong}>김준현</span>입니다.
       </div>
       <div className={classes.contents}>
-        <div className={classes.imgBox}>여긴 사진</div>
+        <div className={classes.imgBox}>
+          <img src={myPic} />
+        </div>
         <ul className={classes.profileBox}>
           <li className={classes.title}>Address</li>
           <li className={classes.detail}>서울시 마포구</li>
