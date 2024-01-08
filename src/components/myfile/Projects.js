@@ -8,12 +8,28 @@ import project4 from "../../assets/projectsLogo/PANDA.png";
 import project5 from "../../assets/projectsLogo/windowsxp.jpg";
 
 const Projects = () => {
+  const url1 =
+    "https://whispering-kettledrum-eab.notion.site/0218-abd4eec363cf4eefb8f4c3cbb6193c4a?pvs=4";
+  const url2 =
+    "https://whispering-kettledrum-eab.notion.site/KIM-S-GAME-CHANNEL-a8b69e4ccf804f3eace30932e7bb27b6?pvs=4";
+  const url3 =
+    "https://whispering-kettledrum-eab.notion.site/674f1a1a8081433db76687ffe4fbaeaf?pvs=4";
+  const url4 =
+    "https://whispering-kettledrum-eab.notion.site/62d7e5d636134859a4eaebf85102a2c3?pvs=4";
+  const url5 =
+    "https://whispering-kettledrum-eab.notion.site/Windows-XP-portfolio-b0083a2923fc4d9aba97d65992bb1b08?pvs=4";
+
   return (
     <Fragment>
       <div className={classes.container}>
         <div className={classes.mainTitle}>💻 프로젝트</div>
         <div className={classes.projectList}>
-          <div className={classes.project}>
+          <button
+            className={classes.project}
+            onClick={() => {
+              window.open(url1);
+            }}
+          >
             <div className={classes.coverImg}>
               <img src={project1} className={classes.pjImg} />
             </div>
@@ -26,9 +42,14 @@ const Projects = () => {
                 <li>CSS</li>
               </ul>
             </div>
-          </div>
+          </button>
 
-          <div className={classes.project}>
+          <button
+            className={classes.project}
+            onClick={() => {
+              window.open(url2);
+            }}
+          >
             <div className={classes.coverImg}>
               <img src={project2} className={classes.pjImg} />
             </div>
@@ -41,9 +62,14 @@ const Projects = () => {
                 <li>CSS</li>
               </ul>
             </div>
-          </div>
+          </button>
 
-          <div className={classes.project}>
+          <button
+            className={classes.project}
+            onClick={() => {
+              window.open(url3);
+            }}
+          >
             <div className={classes.coverImg}>
               <img src={project3} className={classes.pjImg} />
             </div>
@@ -60,9 +86,14 @@ const Projects = () => {
                 <li>MongoDB</li>
               </ul>
             </div>
-          </div>
+          </button>
 
-          <div className={classes.project}>
+          <button
+            className={classes.project}
+            onClick={() => {
+              window.open(url4);
+            }}
+          >
             <div className={classes.coverImg}>
               <img src={project4} className={classes.pjImg} />
             </div>
@@ -81,9 +112,14 @@ const Projects = () => {
                 <li>Git</li>
               </ul>
             </div>
-          </div>
+          </button>
 
-          <div className={classes.project}>
+          <button
+            className={classes.project}
+            onClick={() => {
+              window.open(url5);
+            }}
+          >
             <div className={classes.coverImg}>
               <img src={project5} className={classes.pjImg} />
             </div>
@@ -95,7 +131,7 @@ const Projects = () => {
                 <li>React.js</li>
               </ul>
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </Fragment>

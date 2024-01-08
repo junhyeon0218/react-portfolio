@@ -27,15 +27,20 @@
   margin: 15px;
   box-shadow: 1px 1px 5px 1px rgba(138, 138, 138, 0.439);
   border-radius: 4px;
+  border: none;
+  padding: 0 !important;
+  text-align: start !important;
 }
 
 .project:hover {
   transform: scale(1.03);
   transition: all 0.2s;
+
+  box-shadow: 1px 1px 5px 1px rgba(103, 103, 103, 0.56) !important;
 }
 
 .coverImg {
-  height: 45%;
+  height: 125px;
   width: 100%;
   border-radius: 4px;
 }
@@ -44,37 +49,60 @@
   width: 100%;
   height: 100%;
   background-position: center;
+  background-size: cover;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
 
+.projectDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .projectTitle {
   font-size: 14px;
-  margin: 2px;
+  margin: 5px 8px;
+  overflow: hidden;
+  text-wrap: nowrap;
 }
 
 .projectTimeLine {
-  margin: 3px 2px;
+  margin: 4px 8px;
   color: gray;
   font-size: 11px;
 }
 
-.projectInfo {
-  margin: 2px;
-  font-size: 11px;
-}
-
-.stackBox,
-.stackBox2 {
+.stackBox {
   list-style-type: none;
-  margin: 0;
+  margin: 4px 5px;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
-.stackBox li,
-.stackBox2 li {
+.stackBox::-webkit-scrollbar {
+  height: 3px !important;
+  background-image: none !important;
+}
+
+.stackBox::-webkit-scrollbar-thumb {
+  height: 3px !important;
+  background-image: none !important;
+}
+
+.stackBox::-webkit-scrollbar-track {
+  height: 3px !important;
+  background-image: none !important;
+}
+
+.stackBox::-webkit-scrollbar-button {
+  background-image: none !important;
+  width: 0 !important;
+}
+
+.stackBox li {
   padding: 2px 3px;
   margin: 2px;
   border-radius: 4px;
@@ -83,8 +111,7 @@
   font-size: 10px;
 }
 
-.stackBox li:hover,
-.stackBox2 li:hover {
+.stackBox li:hover {
   transform: scale(1.05);
   transition: all 0.3s;
 }
@@ -117,34 +144,4 @@
 .stackBox li:nth-child(7) {
   background-color: rgba(138, 255, 206, 0.422);
   color: rgb(34, 155, 105);
-}
-
-/* stackBox2 */
-.stackBox2 li:nth-child(5) {
-  background-color: rgba(134, 173, 197, 0.422);
-  color: rgb(123, 159, 182);
-}
-.stackBox2 li:nth-child(1) {
-  background-color: rgba(227, 149, 118, 0.203);
-  color: rgb(202, 123, 91);
-}
-.stackBox2 li:nth-child(7) {
-  background-color: rgba(109, 156, 107, 0.422);
-  color: rgb(99, 142, 98);
-}
-.stackBox2 li:nth-child(2) {
-  background-color: rgba(149, 94, 124, 0.422);
-  color: rgb(149, 103, 128);
-}
-.stackBox2 li:nth-child(3) {
-  background-color: rgba(162, 179, 112, 0.422);
-  color: rgb(159, 172, 116);
-}
-.stackBox2 li:nth-child(6) {
-  background-color: rgba(173, 116, 116, 0.422);
-  color: rgb(158, 103, 103);
-}
-.stackBox2 li:nth-child(4) {
-  background-color: rgba(102, 151, 130, 0.422);
-  color: rgb(92, 132, 115);
 }
