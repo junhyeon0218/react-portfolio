@@ -24,13 +24,16 @@ const Profile = () => {
           <li className={classes.detail}>junhyeon0218@gmail.com</li>
           <li className={classes.title}>GitHub</li>
           <li className={classes.detail}>
-            <a href='https://github.com/junhyeon0218'>
+            <a href='https://github.com/junhyeon0218' target='_blank'>
               github.com/junhyeon0218
             </a>
           </li>
           <li className={classes.title}>Notion</li>
           <li className={classes.detail}>
-            <a href='https://www.notion.so/Kim-Junhyeon-a43ba31ad6624dbda8e9a674a8334193?pvs=4'>
+            <a
+              href='https://www.notion.so/Kim-Junhyeon-a43ba31ad6624dbda8e9a674a8334193?pvs=4'
+              target='_blank'
+            >
               notion.so/Kim-Junhyeon
             </a>
           </li>
