@@ -6,6 +6,7 @@ body {
   background-image: url("../src/assets/wallpaper.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   cursor: default;
